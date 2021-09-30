@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+        <link rel="stylesheet" href="./Gomoku_CSS.css" />
+    </head>
+    <body>
+        <div class="row">
+            <div class="info">
+                <p>Rule</p>
+                <p>原始規則(Free-style Gomoku)</p>
+                <p>點選"開始遊戲"方能下棋</p>
+                <p>黑子先手，落子後換另一方下棋</p>
+                <p>當任一方有5顆棋子連成一線便獲勝</p>
+                <p>遊戲結束後棋盤就無法再下棋</p>
+                <p>如欲重置遊戲，請點選"重新開始"</p>
+                <p style="margin-top: 20px">改良memo</p>
+                <p>標準15路棋盤，可能擴充17路與19路的選項</p>
+                <p>規則方面，可能擴充無禁類規則、有禁類規則等規則選項</p>
+                <p style="margin-top: 20px">備註</p>
+                <p>此為JQuery&JS的練習作品</p>
+                <p>按鈕的CSS借用自</p>
+                <p><a href="https://codepen.io/stidges/pen/vqDjI">Bunch-o-Buttons</a></p>
+                <p>
+                    如有問題或bug歡迎至<a href="https://github.com/KoujiY/sideproject_gomoku"
+                        >Github</a
+                    >回應
+                </p>
+            </div>
+            <div>
+                <div class="chessBoard"></div>
+            </div>
+            <div class="dashboard">
+                <div>
+                    <p>當前玩家</p>
+                    <div class="nowPlayer"></div>
+                </div>
+                <button id="gameStart" class="btn btn-default">開始遊戲</button>
+            </div>
+        </div>
+    </body>
+    <script
+        src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+        crossorigin="anonymous"
+    ></script>
+    <script src="./Gomoku_script.js"></script>
+</html>
